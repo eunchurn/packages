@@ -2,6 +2,7 @@
   "name": "@eunchurn/ring-ts",
   "version": "0.0.6",
   "description": "Ring buffer with types",
+  "private": "false",
   "keywords": [
     "ring",
     "ring",
@@ -34,5 +35,5 @@
   "bugs": {
     "url": "https://github.com/eunchurn/ts-utils/issues"
   },
-  "gitHead": "872a29bedaeae3fee82ff70a1c2a5b39e9aa4ea8"
+  "gitHead": "626abbc7c7ca497d2fa2cbcb99b9c7daa9ae6ff5"
 }
