@@ -84,3 +84,4 @@ exports.Ring = function (size) {
         return arr;
     };
 };
+//# sourceMappingURL=ring.js.map

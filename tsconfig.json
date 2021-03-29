@@ -16,5 +16,9 @@
     "esModuleInterop": true,
     "incremental": true,
     "resolveJsonModule": true
+  },
+  "typedocOptions": {
+    "entryPoints": ["src/index.ts"],
+    "out": "docs"
   }
 }

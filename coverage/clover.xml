@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1617015810339" clover="3.2.0">
+  <project timestamp="1617015810339" name="All files">
+    <metrics statements="39" coveredstatements="37" conditionals="8" coveredconditionals="4" methods="11" coveredmethods="11" elements="58" coveredelements="52" complexity="0" loc="39" ncloc="39" packages="1" files="2" classes="2"/>
+    <file name="index.ts" path="/Users/danbi/eunchurn/ts-utils/ts-utils/packages/ring-ts/src/index.ts">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="1" count="1" type="stmt"/>
+    </file>
+    <file name="ring.ts" path="/Users/danbi/eunchurn/ts-utils/ts-utils/packages/ring-ts/src/ring.ts">
+      <metrics statements="38" coveredstatements="36" conditionals="8" coveredconditionals="4" methods="11" coveredmethods="11"/>
+      <line num="39" count="1" type="stmt"/>
+      <line num="40" count="9" type="cond" truecount="1" falsecount="1"/>
+      <line num="41" count="0" type="stmt"/>
+      <line num="44" count="9" type="stmt"/>
+      <line num="45" count="9" type="stmt"/>
+      <line num="46" count="9" type="stmt"/>
+      <line num="48" count="9" type="stmt"/>
+      <line num="51" count="2" type="stmt"/>
+      <line num="56" count="3" type="stmt"/>
+      <line num="61" count="2" type="stmt"/>
+      <line num="66" count="2" type="stmt"/>
+      <line num="72" count="18" type="stmt"/>
+      <line num="73" count="18" type="stmt"/>
+      <line num="74" count="18" type="cond" truecount="1" falsecount="1"/>
+      <line num="75" count="0" type="stmt"/>
+      <line num="77" count="18" type="stmt"/>
+      <line num="79" count="18" type="stmt"/>
+      <line num="82" count="9" type="stmt"/>
+      <line num="83" count="18" type="stmt"/>
+      <line num="84" count="18" type="stmt"/>
+      <line num="88" count="9" type="stmt"/>
+      <line num="89" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="91" count="1" type="stmt"/>
+      <line num="92" count="1" type="stmt"/>
+      <line num="93" count="1" type="stmt"/>
+      <line num="94" count="1" type="stmt"/>
+      <line num="96" count="1" type="stmt"/>
+      <line num="98" count="9" type="stmt"/>
+      <line num="99" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="101" count="2" type="stmt"/>
+      <line num="102" count="2" type="stmt"/>
+      <line num="106" count="4" type="stmt"/>
+      <line num="110" count="9" type="stmt"/>
+      <line num="111" count="2" type="stmt"/>
+      <line num="112" count="2" type="stmt"/>
+      <line num="113" count="2" type="stmt"/>
+      <line num="114" count="4" type="stmt"/>
+      <line num="117" count="2" type="stmt"/>
+    </file>
+  </project>
+</coverage>
