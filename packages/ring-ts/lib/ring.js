@@ -7,7 +7,7 @@
  * @method `toArray(): number[]` ring buffer to array
  * @method `forEach(callback: (item: number | undefined) => void): void`: Iterative calculation method
  * @author Eunchurn Park
- * @version 0.0.1
+ * @version 0.0.6
  */
 export var Ring = function (size) {
     if (!(this instanceof Ring)) {

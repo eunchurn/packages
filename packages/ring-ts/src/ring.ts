@@ -1,4 +1,4 @@
-interface Ring {
+export interface Ring {
   push(item: number): void;
   dequeue(): number | undefined;
   forEach(callback: (item: number | undefined) => void): void;
