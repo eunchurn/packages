@@ -1,6 +1,6 @@
 {
   "name": "@eunchurn/ring-ts",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Ring buffer with types",
   "private": false,
   "keywords": [
