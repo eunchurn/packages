@@ -13,13 +13,12 @@
       "ignoreChanges": [
         "*.md"
       ],
-      "npmClient": "npm",
+      "npmClient": "yarn",
       "message": "chore(release): publish"
     },
     "publish": {
       "conventionalCommits": true,
       "message": "chore(release): publish",
-      "registry": "https://npm.pkg.github.com",
       "allowBranch": "main"
     }
   }
