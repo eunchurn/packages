@@ -12,8 +12,8 @@
     "watch": "lerna run watch --stream",
     "test": "jest",
     "lerna:add": "lerna add --no-bootstrap",
-    "lerna:publish:github": "lerna publish --registry https://npm.pkg.github.com --access public",
-    "lerna:publish:npm": "lerna publish --registry https://registry.npmjs.org --access public",
+    "lerna:publish:github": "lerna publish --registry https://npm.pkg.github.com",
+    "lerna:publish:npm": "lerna publish --registry https://registry.npmjs.org",
     "lerna:release": "lerna publish from-package"
   },
   "repository": {
