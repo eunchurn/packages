@@ -1,0 +1,34 @@
+{
+  "name": "@eunchurn/ring-ts",
+  "version": "0.0.1",
+  "description": "Ring buffer with types",
+  "keywords": [
+    "ring",
+    "ring",
+    "buffer",
+    "typescript"
+  ],
+  "author": "Eunchurn Park <eunchurn.park@gmail.com>",
+  "homepage": "https://github.com/eunchurn/ts-utils/tree/main/packages/service#readme",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "types": "./lib/types.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eunchurn/ts-utils.git"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "watch": "tsc --watch"
+  },
+  "bugs": {
+    "url": "https://github.com/eunchurn/ts-utils/issues"
+  }
+}

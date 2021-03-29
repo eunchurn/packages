@@ -1,0 +1,26 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "npmClient": "yarn",
+  "npmClientArgs": [
+    "--no-lockfile"
+  ],
+  "useWorkspaces": true,
+  "version": "independent",
+  "command": {
+    "version": {
+      "ignoreChanges": [
+        "*.md"
+      ],
+      "npmClient": "npm",
+      "message": "chore(release): publish"
+    },
+    "publish": {
+      "conventionalCommits": true,
+      "message": "chore(release): publish",
+      "registry": "https://npm.pkg.github.com",
+      "allowBranch": "main"
+    }
+  }
+}

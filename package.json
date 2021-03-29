@@ -1,0 +1,48 @@
+{
+  "name": "root",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "start": "lerna run start --stream",
+    "tsc": "lerna run tsc --stream",
+    "watch": "lerna run watch --stream",
+    "test": "jest",
+    "lerna:add": "lerna add --no-bootstrap",
+    "lerna:publish": "lerna publish",
+    "lerna:release": "lerna publish from-package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eunchurn/ts-utils.git"
+  },
+  "keywords": [],
+  "author": "Eunchurn Park <eunchurn.park@gmail.com> (https://github.com/eunchurn)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eunchurn/ts-utils/issues"
+  },
+  "homepage": "https://github.com/eunchurn/ts-utils#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "jest": "^26.6.3",
+    "lerna": "^4.0.0",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.5.4",
+    "typedoc": "^0.20.34",
+    "typedoc-plugin-markdown": "^3.6.0",
+    "typescript": "^4.2.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
