@@ -2,7 +2,7 @@
   "name": "@eunchurn/ring-ts",
   "version": "0.0.7",
   "description": "Ring buffer with types",
-  "private": "false",
+  "private": false,
   "keywords": [
     "ring",
     "ring",
