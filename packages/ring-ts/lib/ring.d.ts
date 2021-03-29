@@ -1,4 +1,4 @@
-interface Ring {
+export interface Ring {
     push(item: number): void;
     dequeue(): number | undefined;
     forEach(callback: (item: number | undefined) => void): void;
@@ -36,5 +36,4 @@ interface Ring {
  * @version 0.0.6
  */
 export declare const Ring: new (size: number) => Ring;
-export {};
 //# sourceMappingURL=ring.d.ts.map
