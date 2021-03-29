@@ -33,7 +33,7 @@ interface Ring {
  * @method `toArray(): number[]` ring buffer to array
  * @method `forEach(callback: (item: number | undefined) => void): void`: Iterative calculation method
  * @author Eunchurn Park
- * @version 0.0.5
+ * @version 0.0.6
  */
 
 export const Ring = function (this: Ring, size: number) {
