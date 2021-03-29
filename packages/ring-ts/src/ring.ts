@@ -44,7 +44,7 @@ export const Ring = function (this: Ring, size: number) {
   let _list: number[] | undefined[] = new Array(size);
   let _start = 0;
   let _count = 0;
-  let self = this;
+  // const self = this;
   Object.defineProperties(this, {
     isFull: {
       get() {

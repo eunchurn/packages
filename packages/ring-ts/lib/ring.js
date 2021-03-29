@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Ring = void 0;
 /**
  * Ring buffer
  * @constructor
@@ -9,14 +12,14 @@
  * @author Eunchurn Park
  * @version 0.0.6
  */
-export var Ring = function (size) {
-    if (!(this instanceof Ring)) {
-        return new Ring(size);
+exports.Ring = function (size) {
+    if (!(this instanceof exports.Ring)) {
+        return new exports.Ring(size);
     }
     var _list = new Array(size);
     var _start = 0;
     var _count = 0;
-    var self = this;
+    // const self = this;
     Object.defineProperties(this, {
         isFull: {
             get: function () {
@@ -81,4 +84,3 @@ export var Ring = function (size) {
         return arr;
     };
 };
-//# sourceMappingURL=ring.js.map

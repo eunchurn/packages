@@ -5,16 +5,25 @@
   "workspaces": [
     "packages/*"
   ],
+  "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "start": "lerna run start --stream",
     "tsc": "lerna run tsc --stream",
     "watch": "lerna run watch --stream",
-    "test": "jest",
+    "test": "jest --coverage",
+    "test:watch": "jest --coverage --watch",
+    "test:prod": "npm run lint && npm run test -- --no-cache",
+    "lint": "eslint 'packages/**/**/*.ts'",
+    "lint-fix": "eslint 'packages/**/**/*.ts' --fix",
+    "release-docs": "typedoc  --exclude node_modules --out output/api --theme minimal --mode file",
+    "tsdoc": "typedoc",
+    "tsdoc:test": "typedoc --out docs packages/ring-ts/src/index.ts",
     "lerna:add": "lerna add --no-bootstrap",
     "lerna:publish:github": "lerna publish from-package --registry https://npm.pkg.github.com",
     "lerna:publish:npm": "lerna publish --registry https://registry.npmjs.org",
-    "lerna:release": "lerna publish from-package"
+    "lerna:release": "lerna publish from-package",
+    "lerna:publish": "yarn lerna:publish:npm && yarn lerna:publish:github"
   },
   "repository": {
     "type": "git",
@@ -38,6 +47,7 @@
     "lerna": "^4.0.0",
     "prettier": "^2.2.1",
     "ts-jest": "^26.5.4",
+    "ts-node": "^9.1.1",
     "typedoc": "^0.20.34",
     "typedoc-plugin-markdown": "^3.6.0",
     "typescript": "^4.2.3"

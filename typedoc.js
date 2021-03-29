@@ -1,10 +1,10 @@
 module.exports = {
   out: './docs/',
-  platform: 'github',
+  platform: 'bitbucket',
   theme: 'markdown',
   module: 'es2015',
   includes: './packages/**',
-  exclude: ['**/__tests__/**/*', '**/*.types.ts'],
+  exclude: ['**/__tests__/**/*', '**/*.types.ts', './packages/template/**/*.ts'],
   mode: 'file',
   excludeExternals: true,
   excludeNotExported: true,
