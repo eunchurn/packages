@@ -26,6 +26,13 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-build-
             ${{ runner.OS }}-
+      - name: Configure NPM
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=$GH_PACKAGE_TOKEN" > .npmrc
+          echo "//registry.npmjs.org/:_authToken=$NPM_PACKAGE_TOKEN" >> .npmrc
+        env:
+          GH_PACKAGE_TOKEN: ${{ secrets.GH_PACKAGE_TOKEN }}
+          NPM_PACKAGE_TOKEN: ${{ secrets.NPM_PACKAGE_TOKEN }}
       - name: Install dependencies
         run: |
           yarn
