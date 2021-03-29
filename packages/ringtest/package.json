@@ -1,6 +1,6 @@
 {
   "name": "ringtest",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ring testing",
   "private": true,
   "keywords": [
@@ -19,6 +19,6 @@
     "watch": "tsc --watch"
   },
   "dependencies": {
-    "@eunchurn/ring-ts": "^0.0.15"
+    "@eunchurn/ring-ts": "^0.0.16"
   }
 }
