@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.15](https://github.com/eunchurn/ts-utils/compare/@eunchurn/ring-ts@0.0.14...@eunchurn/ring-ts@0.0.15) (2021-03-29)
+
+
+### Bug Fixes
+
+* **types:** index.d.ts ([4b04b13](https://github.com/eunchurn/ts-utils/commit/4b04b13b834bce9f75503491b96f019f3844bc6a))
+
+
+
+
+
 ## [0.0.14](https://github.com/eunchurn/ts-utils/compare/@eunchurn/ring-ts@0.0.13...@eunchurn/ring-ts@0.0.14) (2021-03-29)
 
 
