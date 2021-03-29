@@ -29,11 +29,8 @@
     "tsc": "tsc",
     "watch": "tsc --watch"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
-  },
   "bugs": {
     "url": "https://github.com/eunchurn/ts-utils/issues"
   },
-  "gitHead": "626abbc7c7ca497d2fa2cbcb99b9c7daa9ae6ff5"
+  "gitHead": "01423cb9bccbbea79d0c43b97833588e8a98e3dc"
 }
