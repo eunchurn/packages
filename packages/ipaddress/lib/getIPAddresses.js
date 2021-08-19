@@ -6,7 +6,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.getIPAddresses = void 0;
 var os_1 = __importDefault(require("os"));
 var lodash_1 = require("lodash");
-console.log(os_1.default);
 var networkInterfaces = os_1.default.networkInterfaces();
 function getIPAddresses() {
     var ip = [];

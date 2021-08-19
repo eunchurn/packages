@@ -1,7 +1,6 @@
 import os from "os";
 import { compact, isEmpty } from "lodash";
 
-console.log(os);
 const networkInterfaces = os.networkInterfaces();
 
 export function getIPAddresses() {
