@@ -15,7 +15,7 @@
   "types": "./lib/index.d.ts",
   "directories": {
     "lib": "lib",
-    "test": "__tests__"
+    "test": "src/__tests__"
   },
   "files": [
     "lib"
@@ -29,7 +29,8 @@
   },
   "scripts": {
     "tsc": "tsc",
-    "watch": "tsc --watch"
+    "watch": "tsc --watch",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "lodash": "^4.17.21"
