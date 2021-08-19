@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.4](https://github.com/eunchurn/ts-utils/compare/@eunchurn/ipaddress@0.2.3...@eunchurn/ipaddress@0.2.4) (2021-08-19)
+
+
+### Bug Fixes
+
+* build ([fdd5367](https://github.com/eunchurn/ts-utils/commit/fdd5367de6ffc1b42fd97582b55c651620e9faf9))
+
+
+
+
+
 ## [0.2.3](https://github.com/eunchurn/ts-utils/compare/@eunchurn/ipaddress@0.2.2...@eunchurn/ipaddress@0.2.3) (2021-08-19)
 
 
