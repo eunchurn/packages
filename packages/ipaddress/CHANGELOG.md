@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.3](https://github.com/eunchurn/ts-utils/compare/@eunchurn/ipaddress@0.2.2...@eunchurn/ipaddress@0.2.3) (2021-08-19)
+
+
+### Bug Fixes
+
+* remove console ([901f8b9](https://github.com/eunchurn/ts-utils/commit/901f8b91493400ca1d6ac713ad796a9c6efbe38e))
+
+
+
+
+
 ## [0.2.2](https://github.com/eunchurn/ts-utils/compare/@eunchurn/ipaddress@0.2.1...@eunchurn/ipaddress@0.2.2) (2021-08-19)
 
 **Note:** Version bump only for package @eunchurn/ipaddress
