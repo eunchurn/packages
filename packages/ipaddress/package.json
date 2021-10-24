@@ -38,5 +38,8 @@
   "devDependencies": {
     "@types/lodash": "^4.14.172"
   },
-  "gitHead": "85c8c69e57ce1fdab962bc64073e9271abb092c1"
+  "gitHead": "85c8c69e57ce1fdab962bc64073e9271abb092c1",
+  "engines": {
+    "node": "^12 || ^14 || >=16.0.0"
+  }
 }
