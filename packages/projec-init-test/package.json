@@ -1,6 +1,6 @@
 {
   "name": "project-init-test",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "project init testing",
   "private": true,
   "keywords": [
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@eunchurn/base-eslint-config": "^0.1.6",
-    "@eunchurn/project-init": "^0.0.14"
+    "@eunchurn/project-init": "^0.0.15"
   },
   "devDependencies": {
     "@eunchurn/base-eslint-config": "^0.1.4",
