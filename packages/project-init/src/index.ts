@@ -15,7 +15,7 @@ async function main() {
   const tscResult = execSync("yarn tsc --init --outDir dist")
   console.log(tscResult.toString())
 
-  fs.writeFileSync(".eslintrc.json", JSON.stringify(eslint, null, 2))
+  fs.writeFileSync(".eslintrc.js", JSON.stringify(eslint, null, 2))
   fs.writeFileSync(".prettierrc", JSON.stringify(prettier, null, 2))
 
   try {
