@@ -10,7 +10,7 @@ function getNetworkIP(callback) {
     var socket = net_1.default.createConnection(80, "www.google.com");
     socket.on("connect", function () {
         var socketAddress = socket.address();
-        if (lodash_1.isEmpty(socketAddress))
+        if ((0, lodash_1.isEmpty)(socketAddress))
             return;
         var address = socketAddress.address;
         callback(undefined, address);

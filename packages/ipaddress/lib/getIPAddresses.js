@@ -13,17 +13,17 @@ function getIPAddresses() {
         var iface = networkInterfaces[devName];
         if (iface === undefined)
             return ["0.0.0.0"];
-        var ipaddress = lodash_1.compact(iface.map(function (alias) {
+        var ipaddress = (0, lodash_1.compact)(iface.map(function (alias) {
             if (alias.family === "IPv4" && alias.address !== "127.0.0.1" && !alias.internal) {
                 return alias.address;
             }
             return null;
         }));
-        if (lodash_1.isEmpty(ipaddress))
+        if ((0, lodash_1.isEmpty)(ipaddress))
             continue;
         ip.push(ipaddress[0]);
     }
-    if (lodash_1.isEmpty(ip))
+    if ((0, lodash_1.isEmpty)(ip))
         return ["0.0.0.0"];
     return ip;
 }
