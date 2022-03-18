@@ -1,2 +1,1 @@
-import "@eunchurn/project-init";
-
+require("@eunchurn/project-init");
