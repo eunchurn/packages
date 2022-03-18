@@ -27,7 +27,7 @@ function main() {
         console.log(giResult.toString());
         const tscResult = (0, child_process_1.execSync)("yarn tsc --init --outDir dist");
         console.log(tscResult.toString());
-        fs_1.default.writeFileSync(".eslintrc.json", JSON.stringify(eslintConfig_1.eslint, null, 2));
+        fs_1.default.writeFileSync(".eslintrc.js", JSON.stringify(eslintConfig_1.eslint, null, 2));
         fs_1.default.writeFileSync(".prettierrc", JSON.stringify(prettierConfig_1.prettier, null, 2));
         try {
             (0, child_process_1.execSync)("mkdir .vscode");
