@@ -8,7 +8,7 @@ import { vscode } from "./vscodeConfig";
 
 async function main() {
   console.log("== 🎁 installing eunchurn TypeScript project")
-  execSync("yarn add -D typescript ts-node ts-node-dev @types/node @eunchurn/base-eslint-config");
+  execSync("yarn add -D typescript ts-node ts-node-dev @types/node @eunchurn/eslint-config");
   const giResult = execSync("npx gitignore node");
   console.log(giResult.toString())
 

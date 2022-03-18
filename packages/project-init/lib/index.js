@@ -22,7 +22,7 @@ const vscodeConfig_1 = require("./vscodeConfig");
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
         console.log("== 🎁 installing eunchurn TypeScript project");
-        (0, child_process_1.execSync)("yarn add -D typescript ts-node ts-node-dev @types/node @eunchurn/base-eslint-config");
+        (0, child_process_1.execSync)("yarn add -D typescript ts-node ts-node-dev @types/node @eunchurn/eslint-config");
         const giResult = (0, child_process_1.execSync)("npx gitignore node");
         console.log(giResult.toString());
         const tscResult = (0, child_process_1.execSync)("yarn tsc --init --outDir dist");
