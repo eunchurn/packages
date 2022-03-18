@@ -22,8 +22,8 @@
     "tsdoc:test": "typedoc --out docs packages/ring-ts/src/index.ts",
     "lerna:create": "lerna create",
     "lerna:add": "lerna add --no-bootstrap",
-    "lerna:publish:github": "lerna publish from-package --registry https://npm.pkg.github.com",
-    "lerna:publish:npm": "lerna publish --registry https://registry.npmjs.org",
+    "lerna:publish:github": "lerna publish from-package --registry https://npm.pkg.github.com --no-commit-hooks",
+    "lerna:publish:npm": "lerna publish --registry https://registry.npmjs.org --no-commit-hooks",
     "lerna:release": "lerna publish from-package",
     "lerna:publish": "yarn lerna:publish:npm && yarn lerna:publish:github"
   },
