@@ -35,11 +35,7 @@
     "watch": "tsc --watch",
     "typecheck": "tsc --noEmit"
   },
-  "devDependencies": {
-    "@types/shelljs": "^0.8.11"
-  },
   "dependencies": {
-    "shelljs": "^0.8.5",
     "typescript": "^4.6.2"
   },
   "gitHead": "ac7a650197653b6eb206c990ae37ca26e48afc3e"
