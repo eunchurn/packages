@@ -11,6 +11,7 @@ const prettierConfig_1 = require("./prettierConfig");
 const vscodeConfig_1 = require("./vscodeConfig");
 shelljs_1.default.exec("yarn add -D typescript ts-node ts-node-dev @types/node @eunchurn/base-eslint-config");
 shelljs_1.default.exec("npx gitignore node");
+shelljs_1.default.exec("yarn tsc --init --outDir dist");
 fs_1.default.writeFileSync(".eslintrc.json", JSON.stringify(eslintConfig_1.eslint, null, 2));
 fs_1.default.writeFileSync(".prettierrc", JSON.stringify(prettierConfig_1.prettier, null, 2));
 try {
@@ -20,5 +21,4 @@ catch (_a) {
     console.log(".vscode already exist");
 }
 fs_1.default.writeFileSync(".vscode/settings.json", JSON.stringify(vscodeConfig_1.vscode, null, 2));
-shelljs_1.default.cp("tsconfigjson", "tsconfig.json");
 //# sourceMappingURL=index.js.map
