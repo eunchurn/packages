@@ -2,6 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.eslint = void 0;
 exports.eslint = {
-    extends: ["@danbi-fi/eslint-config-danbi-base"],
+    extends: ["@eunchurn/base-eslint-config"],
 };
 //# sourceMappingURL=eslintConfig.js.map

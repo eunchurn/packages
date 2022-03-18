@@ -1,3 +1,3 @@
 export const eslint = {
-  extends: ["@danbi-fi/eslint-config-danbi-base"],
+  extends: ["@eunchurn/base-eslint-config"],
 }
