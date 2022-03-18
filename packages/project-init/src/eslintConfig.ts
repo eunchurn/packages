@@ -1,3 +1,8 @@
 export const eslint = `module.exports = {
-  extends: ["@eunchurn/base-eslint-config"],
+  extends: ["@eunchurn/eslint-config"],
 }`
+
+export const eslintignore = `
+node_modules
+.eslintrc.js
+`

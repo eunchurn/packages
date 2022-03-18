@@ -2,7 +2,7 @@
 // import shelljs from "shelljs";
 import { execSync } from "child_process";
 import fs from "fs";
-import { eslint } from "./eslintConfig";
+import { eslint, eslintignore } from "./eslintConfig";
 import { prettier } from "./prettierConfig";
 import { vscode } from "./vscodeConfig";
 
@@ -15,8 +15,9 @@ async function main() {
   const tscResult = execSync("yarn tsc --init --outDir dist")
   console.log(tscResult.toString())
 
-  fs.writeFileSync(".eslintrc.js", eslint)
-  fs.writeFileSync(".prettierrc", JSON.stringify(prettier, null, 2))
+  fs.writeFileSync(".eslintrc.js", eslint);
+  fs.writeFileSync(".eslintignore", eslintignore);
+  fs.writeFileSync(".prettierrc", JSON.stringify(prettier, null, 2));
 
   try {
     execSync("mkdir .vscode");
