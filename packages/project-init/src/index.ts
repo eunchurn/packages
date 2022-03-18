@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import shelljs from "shelljs";
 import fs from "fs";
 import { eslint } from "./eslintConfig";
