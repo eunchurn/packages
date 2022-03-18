@@ -11,10 +11,10 @@
   "author": "Eunchurn Park <eunchurn.park@gmail.com>",
   "homepage": "https://github.com/eunchurn/ts-utils/tree/main/packages/base-eslint-config#readme",
   "license": "MIT",
-  "main": "lib/base-eslint-config.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+    "lib": "lib"
   },
   "files": [
     "lib"
