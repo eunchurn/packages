@@ -1,0 +1,7 @@
+export const prettier = {
+  "semi": true,
+  "trailingComma": "all",
+  "singleQuote": false,
+  "printWidth": 80,
+  "endOfLine": "auto"
+}

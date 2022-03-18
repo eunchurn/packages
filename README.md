@@ -30,3 +30,8 @@ console.log({ isEmpty, count, isFull, size });
 // { isEmpty: true, count: 0, isFull: false, size: 100 }
 ```
 
+## Initial
+
+```
+npm config set access public
+```

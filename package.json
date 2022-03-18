@@ -11,6 +11,7 @@
     "start": "lerna run start --stream",
     "tsc": "lerna run tsc --stream",
     "watch": "lerna run watch --stream",
+    "project-init": "lerna run project-init --stream",
     "typecheck": "lerna run typecheck --stream",
     "test": "jest --coverage",
     "test:watch": "jest --coverage --watch",

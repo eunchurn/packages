@@ -1,0 +1,40 @@
+{
+  "name": "@eunchurn/project-init",
+  "version": "0.0.1",
+  "description": "TypeScript project init prettier, eslint, configuration",
+  "keywords": [
+    "typescript",
+    "prettier",
+    "eslint",
+    "config",
+    "plugin"
+  ],
+  "author": "Eunchurn Park <eunchurn.park@gmail.com>",
+  "homepage": "https://github.com/eunchurn/ts-utils/tree/main/packages/project-init#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-eunchurn:eunchurn/ts-utils.git"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "watch": "tsc --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/shelljs": "^0.8.11",
+    "shelljs": "^0.8.5",
+    "typescript": "^4.6.2"
+  }
+}

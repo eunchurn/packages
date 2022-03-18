@@ -1,0 +1,2 @@
+import "@eunchurn/project-init";
+
