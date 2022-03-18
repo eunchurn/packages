@@ -1,6 +1,6 @@
 {
   "name": "@eunchurn/project-init",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "TypeScript project init prettier, eslint, configuration",
   "keywords": [
     "typescript",
