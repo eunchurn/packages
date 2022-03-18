@@ -1,5 +1,5 @@
 {
-  "name": "@eunchurn/base-eslint-config",
+  "name": "@eunchurn/eslint-config",
   "version": "0.1.6",
   "description": "Code lint with TypeScript and Prettier",
   "keywords": [
@@ -9,7 +9,7 @@
     "plugin"
   ],
   "author": "Eunchurn Park <eunchurn.park@gmail.com>",
-  "homepage": "https://github.com/eunchurn/ts-utils/tree/main/packages/base-eslint-config#readme",
+  "homepage": "https://github.com/eunchurn/ts-utils/tree/main/packages/eslint-config#readme",
   "license": "MIT",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -40,5 +40,5 @@
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.6.0"
   },
-  "gitHead": "a0dcabdd21b28de4905615bb5014aff98bf6b032"
+  "gitHead": "f96d39b2cd14a0af230f1df96258de2442f73064"
 }
