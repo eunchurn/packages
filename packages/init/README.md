@@ -2,7 +2,7 @@
 
 Project init script for TypeScript, ESLint, Prettier
 
-## Usage
+## Usage (Not work in Windows OS)
 
 ```sh
 npx @eunchurn/init

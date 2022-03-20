@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const projectInit = require('..');
-
-describe('project-init', () => {
-    it('needs tests');
+describe("init", () => {
+  it("needs tests", () => {
+    console.log("pass");
+  });
 });

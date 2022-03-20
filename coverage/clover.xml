@@ -1,60 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1629396384289" clover="3.2.0">
-  <project timestamp="1629396384289" name="All files">
-    <metrics statements="70" coveredstatements="62" conditionals="21" coveredconditionals="13" methods="16" coveredmethods="14" elements="107" coveredelements="89" complexity="0" loc="70" ncloc="70" packages="2" files="5" classes="5"/>
+<coverage generated="1647789785565" clover="3.2.0">
+  <project timestamp="1647789785565" name="All files">
+    <metrics statements="69" coveredstatements="61" conditionals="13" coveredconditionals="6" methods="16" coveredmethods="14" elements="98" coveredelements="81" complexity="0" loc="69" ncloc="69" packages="2" files="5" classes="5"/>
     <package name="ipaddress.src">
-      <metrics statements="31" coveredstatements="25" conditionals="13" coveredconditionals="9" methods="5" coveredmethods="3"/>
-      <file name="getIPAddresses.ts" path="/Users/danbi/eunchurn/ts-utils/packages/ipaddress/src/getIPAddresses.ts">
-        <metrics statements="17" coveredstatements="17" conditionals="11" coveredconditionals="9" methods="2" coveredmethods="2"/>
+      <metrics statements="30" coveredstatements="24" conditionals="8" coveredconditionals="5" methods="5" coveredmethods="3"/>
+      <file name="getIPAddresses.ts" path="/Users/eunchurnpark/eunchurn/ts-utils/packages/ipaddress/src/getIPAddresses.ts">
+        <metrics statements="16" coveredstatements="16" conditionals="7" coveredconditionals="5" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="10" type="stmt"/>
-        <line num="11" count="10" type="cond" truecount="1" falsecount="1"/>
-        <line num="12" count="10" type="stmt"/>
-        <line num="14" count="13" type="cond" truecount="5" falsecount="0"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="17" count="12" type="stmt"/>
-        <line num="20" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="23" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="24" count="1" type="stmt"/>
+        <line num="9" count="12" type="stmt"/>
+        <line num="10" count="12" type="cond" truecount="0" falsecount="1"/>
+        <line num="11" count="12" type="stmt"/>
+        <line num="13" count="15" type="cond" truecount="4" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="14" type="stmt"/>
+        <line num="19" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="22" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="23" count="1" type="stmt"/>
       </file>
-      <file name="getNetworkIP.ts" path="/Users/danbi/eunchurn/ts-utils/packages/ipaddress/src/getNetworkIP.ts">
-        <metrics statements="12" coveredstatements="6" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <file name="getNetworkIP.ts" path="/Users/eunchurnpark/eunchurn/ts-utils/packages/ipaddress/src/getNetworkIP.ts">
+        <metrics statements="12" coveredstatements="6" conditionals="1" coveredconditionals="0" methods="3" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="8" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
       </file>
-      <file name="index.ts" path="/Users/danbi/eunchurn/ts-utils/packages/ipaddress/src/index.ts">
+      <file name="index.ts" path="/Users/eunchurnpark/eunchurn/ts-utils/packages/ipaddress/src/index.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
       </file>
     </package>
     <package name="ring-ts.src">
-      <metrics statements="39" coveredstatements="37" conditionals="8" coveredconditionals="4" methods="11" coveredmethods="11"/>
-      <file name="index.ts" path="/Users/danbi/eunchurn/ts-utils/packages/ring-ts/src/index.ts">
+      <metrics statements="39" coveredstatements="37" conditionals="5" coveredconditionals="1" methods="11" coveredmethods="11"/>
+      <file name="index.ts" path="/Users/eunchurnpark/eunchurn/ts-utils/packages/ring-ts/src/index.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
       </file>
-      <file name="ring.ts" path="/Users/danbi/eunchurn/ts-utils/packages/ring-ts/src/ring.ts">
-        <metrics statements="38" coveredstatements="36" conditionals="8" coveredconditionals="4" methods="11" coveredmethods="11"/>
+      <file name="ring.ts" path="/Users/eunchurnpark/eunchurn/ts-utils/packages/ring-ts/src/ring.ts">
+        <metrics statements="38" coveredstatements="36" conditionals="5" coveredconditionals="1" methods="11" coveredmethods="11"/>
         <line num="39" count="1" type="stmt"/>
-        <line num="40" count="9" type="cond" truecount="1" falsecount="1"/>
+        <line num="40" count="9" type="cond" truecount="0" falsecount="1"/>
         <line num="41" count="0" type="stmt"/>
         <line num="44" count="9" type="stmt"/>
         <line num="45" count="9" type="stmt"/>
@@ -74,14 +73,14 @@
         <line num="83" count="18" type="stmt"/>
         <line num="84" count="18" type="stmt"/>
         <line num="88" count="9" type="stmt"/>
-        <line num="89" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="89" count="1" type="cond" truecount="0" falsecount="1"/>
         <line num="91" count="1" type="stmt"/>
         <line num="92" count="1" type="stmt"/>
         <line num="93" count="1" type="stmt"/>
         <line num="94" count="1" type="stmt"/>
         <line num="96" count="1" type="stmt"/>
         <line num="98" count="9" type="stmt"/>
-        <line num="99" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="99" count="2" type="cond" truecount="0" falsecount="1"/>
         <line num="101" count="2" type="stmt"/>
         <line num="102" count="2" type="stmt"/>
         <line num="106" count="4" type="stmt"/>
