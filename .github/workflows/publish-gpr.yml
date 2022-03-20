@@ -85,6 +85,10 @@ jobs:
           cp lerna.gpr.json lerna.json
           git add .
           git commit -m "chore(publish): registry change"
+      - name: "Setup npm"
+        run: |
+          npm set @eunchurn:registry=https://npm.pkg.github.com
+          npm set "//npm.pkg.github.com/:_authToken=$GH_PACKAGE_TOKEN"
       - name: Publish
         if: steps.tag_check.outputs.exists_tag == 'false'
         run: |
