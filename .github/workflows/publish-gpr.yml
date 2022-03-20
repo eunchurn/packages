@@ -13,8 +13,9 @@ permissions:
 
 jobs:
   publish:
+    if: github.event.pull_request.merged == true
     name: Publish
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
