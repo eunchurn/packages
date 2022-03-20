@@ -32,7 +32,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Install
-        run: yarn install
+        run: |
+          cp lerna.gpr.json lerna.json
+          yarn install
       - name: Bootstrap
         run: yarn bootstrap
       - name: Build
@@ -83,7 +85,6 @@ jobs:
         run: |
           echo "@eunchurn:registry=https://npm.pkg.github.com" > .npmrc
           echo "//npm.pkg.github.com/:_authToken=$GH_PACKAGE_TOKEN" >> .npmrc
-          cp lerna.gpr.json lerna.json
           git add .
           git commit -m "chore(publish): registry change"
       - name: "Setup npm"
