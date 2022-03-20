@@ -13,8 +13,9 @@ permissions:
 
 jobs:
   publish:
+    if: github.event.pull_request.merged == true
     name: Publish
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -25,9 +26,9 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
       - name: Git Identity
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor}}@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Install
@@ -82,10 +83,14 @@ jobs:
           NPM_PACKAGE_TOKEN: ${{ secrets.NPM_PACKAGE_TOKEN }}
         run: |
           echo "@eunchurn:registry=https://registry.npmjs.org" > .npmrc
-          echo "//npm.pkg.github.com/:_authToken=$NPM_PACKAGE_TOKEN" >> .npmrc
+          echo "//registry.npmjs.org/:_authToken=$NPM_PACKAGE_TOKEN" >> .npmrc
           cp lerna.npm.json lerna.json
           git add .
           git commit -m "chore(publish): registry change"
+      - name: "Setup npm"
+        run: |
+          npm set @eunchurn:registry=https://registry.npmjs.org
+          npm set "//registry.npmjs.org/:_authToken=$NPM_PACKAGE_TOKEN"
       - name: Publish
         if: steps.tag_check.outputs.exists_tag == 'false'
         run: |
