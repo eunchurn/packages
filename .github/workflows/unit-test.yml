@@ -35,6 +35,7 @@ jobs:
           NPM_PACKAGE_TOKEN: ${{ secrets.NPM_PACKAGE_TOKEN }}
       - name: Install dependencies
         run: |
+          cp lerna.default.json lerna.json
           yarn
       - name: Lerna Bootstrap
         run: |
