@@ -14,7 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const shelljs_1 = __importDefault(require("shelljs"));
-const child_process_1 = require("child_process");
+// import { execSync } from "child_process";
 const fs_1 = __importDefault(require("fs"));
 const eslintConfig_1 = require("./eslintConfig");
 const prettierConfig_1 = require("./prettierConfig");
@@ -22,14 +22,16 @@ const vscodeConfig_1 = require("./vscodeConfig");
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
         console.log("== 🎁 installing eunchurn TypeScript project");
-        (0, child_process_1.execSync)("yarn add -D typescript ts-node ts-node-dev @types/node @eunchurn/eslint-config");
-        const giResult = (0, child_process_1.execSync)("npx gitignore node");
+        shelljs_1.default.exec("");
+        shelljs_1.default.exec("yarn add -D typescript ts-node ts-node-dev @types/node @eunchurn/eslint-config @eunchurn/prettier-config");
+        const giResult = shelljs_1.default.exec("npx gitignore node");
         console.log(giResult.toString());
-        const tscResult = (0, child_process_1.execSync)("yarn tsc --init --outDir dist");
+        const tscResult = shelljs_1.default.exec("yarn tsc --init --outDir dist");
         console.log(tscResult.toString());
         fs_1.default.writeFileSync(".eslintrc.js", eslintConfig_1.eslint);
         fs_1.default.writeFileSync(".eslintignore", eslintConfig_1.eslintignore);
-        fs_1.default.writeFileSync(".prettierrc", JSON.stringify(prettierConfig_1.prettier, null, 2));
+        fs_1.default.writeFileSync(".prettierrc.js", JSON.stringify(prettierConfig_1.prettier, null, 2));
+        shelljs_1.default.exec(`json -I -f package.json -e "this.prettier=\"@eunchurn/prettier-config\""`);
         try {
             shelljs_1.default.exec("mkdir .vscode");
         }

@@ -40,10 +40,12 @@
     "typescript": "^4.6.2"
   },
   "peerDependencies": {
-    "shelljs": "^0.8.5"
+    "shelljs": "^0.8.5",
+    "json": "^11.0.0"
   },
   "gitHead": "a0dbe66d26463c27df3f10f6b3f51e83d49da293",
   "devDependencies": {
-    "@types/shelljs": "^0.8.11"
+    "@types/shelljs": "^0.8.11",
+    "json": "^11.0.0"
   }
 }
