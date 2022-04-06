@@ -69,7 +69,7 @@ function main() {
         catch (_d) {
             console.log(".jest already exist");
         }
-        shelljs_1.default.exec("npx prettier write .");
+        shelljs_1.default.exec("npx prettier --write .");
         return "done";
     });
 }

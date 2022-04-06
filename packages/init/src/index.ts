@@ -55,7 +55,7 @@ async function main() {
   } catch {
     console.log(".jest already exist");
   }
-  shelljs.exec("npx prettier write .");
+  shelljs.exec("npx prettier --write .");
   return "done";
 }
 
