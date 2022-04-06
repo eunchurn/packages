@@ -1,0 +1,27 @@
+{
+  "name": "@eunchurn/prettier-config",
+  "version": "0.0.1",
+  "description": "eunchurn prettier config",
+  "keywords": [
+    "prettier",
+    "config",
+    "eunchurn"
+  ],
+  "author": "Eunchurn Park <eunchurn.park@gmail.com>",
+  "homepage": "https://github.com/eunchurn/ts-utils/tree/main/packages/prettier-config#readme",
+  "license": "MIT",
+  "main": "prettier-config.json",
+  "files": [
+    "prettier-config.json"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-eunchurn:eunchurn/ts-utils.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
