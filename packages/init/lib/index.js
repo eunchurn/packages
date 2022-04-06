@@ -36,6 +36,13 @@ function main() {
             console.log(".vscode already exist");
         }
         fs_1.default.writeFileSync(".vscode/settings.json", JSON.stringify(vscodeConfig_1.vscode, null, 2));
+        try {
+            shelljs_1.default.exec("mkdir src");
+        }
+        catch (_b) {
+            console.log("src already exist");
+        }
+        fs_1.default.writeFileSync("src/index.ts", `export {};`);
         return "done";
     });
 }
