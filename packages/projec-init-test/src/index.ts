@@ -1,1 +1,1 @@
-require("@eunchurn/project-init");
+require("@eunchurn/init");

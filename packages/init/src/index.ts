@@ -8,19 +8,17 @@ import { vscode } from "./vscodeConfig";
 
 async function main() {
   console.log("== 🎁 installing eunchurn TypeScript project");
-  shelljs.exec("");
   shelljs.exec(
     "yarn add -D typescript ts-node ts-node-dev @types/node @eunchurn/eslint-config @eunchurn/prettier-config",
   );
-  const giResult = shelljs.exec("npx gitignore node");
-  console.log(giResult.toString());
-
-  const tscResult = shelljs.exec("yarn tsc --init --outDir dist");
-  console.log(tscResult.toString());
+  shelljs.exec("npx gitignore node");
+  shelljs.exec("yarn tsc --init --outDir dist");
   fs.writeFileSync(".eslintrc.js", eslint);
   fs.writeFileSync(".eslintignore", eslintignore);
   fs.writeFileSync(".prettierrc.js", JSON.stringify(prettier, null, 2));
-  shelljs.exec(`json -I -f package.json -e "this.prettier=\"@eunchurn/prettier-config\""`);
+  shelljs.exec(
+    `node -e "let pkg=require('./package.json'); pkg.prettier='@eunchurn/prettier-config'; require('fs').writeFileSync('package.json', JSON.stringify(pkg, null, 2));"`,
+  );
   try {
     shelljs.exec("mkdir .vscode");
   } catch {

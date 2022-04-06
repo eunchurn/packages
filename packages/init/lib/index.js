@@ -22,16 +22,13 @@ const vscodeConfig_1 = require("./vscodeConfig");
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
         console.log("== 🎁 installing eunchurn TypeScript project");
-        shelljs_1.default.exec("");
         shelljs_1.default.exec("yarn add -D typescript ts-node ts-node-dev @types/node @eunchurn/eslint-config @eunchurn/prettier-config");
-        const giResult = shelljs_1.default.exec("npx gitignore node");
-        console.log(giResult.toString());
-        const tscResult = shelljs_1.default.exec("yarn tsc --init --outDir dist");
-        console.log(tscResult.toString());
+        shelljs_1.default.exec("npx gitignore node");
+        shelljs_1.default.exec("yarn tsc --init --outDir dist");
         fs_1.default.writeFileSync(".eslintrc.js", eslintConfig_1.eslint);
         fs_1.default.writeFileSync(".eslintignore", eslintConfig_1.eslintignore);
         fs_1.default.writeFileSync(".prettierrc.js", JSON.stringify(prettierConfig_1.prettier, null, 2));
-        shelljs_1.default.exec(`json -I -f package.json -e "this.prettier=\"@eunchurn/prettier-config\""`);
+        shelljs_1.default.exec(`node -e "let pkg=require('./package.json'); pkg.prettier='@eunchurn/prettier-config'; require('fs').writeFileSync('package.json', JSON.stringify(pkg, null, 2));"`);
         try {
             shelljs_1.default.exec("mkdir .vscode");
         }
