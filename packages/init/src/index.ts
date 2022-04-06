@@ -24,8 +24,13 @@ async function main() {
   } catch {
     console.log(".vscode already exist");
   }
-
   fs.writeFileSync(".vscode/settings.json", JSON.stringify(vscode, null, 2));
+  try {
+    shelljs.exec("mkdir src");
+  } catch {
+    console.log("src already exist");
+  }
+  fs.writeFileSync("src/index.ts", `export {};`);
   return "done";
 }
 
