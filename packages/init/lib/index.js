@@ -25,6 +25,7 @@ const src_1 = require("./src");
 const jestConfig_1 = require("./jestConfig");
 const jestSetupEnv_1 = require("./jestSetupEnv");
 const sampleTestCode_1 = require("./sampleTestCode");
+const prettierignore_1 = require("./prettierignore");
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
         console.log("== 🎁 installing eunchurn TypeScript project");
@@ -36,6 +37,7 @@ function main() {
         fs_1.default.writeFileSync(".eslintrc.js", eslintConfig_1.eslint);
         fs_1.default.writeFileSync(".eslintignore", eslintConfig_1.eslintignore);
         fs_1.default.writeFileSync(".prettierrc.js", prettierConfig_1.prettier);
+        fs_1.default.writeFileSync(".prettierignore", prettierignore_1.prettierignore);
         shelljs_1.default.exec(`node -e "let pkg=require('./package.json'); pkg.prettier='@eunchurn/prettier-config'; require('fs').writeFileSync('package.json', JSON.stringify(pkg, null, 2));"`);
         try {
             shelljs_1.default.exec("mkdir .vscode");
@@ -67,6 +69,7 @@ function main() {
         catch (_d) {
             console.log(".jest already exist");
         }
+        shelljs_1.default.exec("npx prettier write .");
         return "done";
     });
 }
