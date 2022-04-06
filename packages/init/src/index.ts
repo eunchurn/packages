@@ -15,7 +15,7 @@ async function main() {
   shelljs.exec("yarn tsc --init --outDir dist");
   fs.writeFileSync(".eslintrc.js", eslint);
   fs.writeFileSync(".eslintignore", eslintignore);
-  fs.writeFileSync(".prettierrc.js", JSON.stringify(prettier, null, 2));
+  fs.writeFileSync(".prettierrc.js", prettier);
   shelljs.exec(
     `node -e "let pkg=require('./package.json'); pkg.prettier='@eunchurn/prettier-config'; require('fs').writeFileSync('package.json', JSON.stringify(pkg, null, 2));"`,
   );

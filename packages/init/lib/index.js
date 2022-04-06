@@ -27,7 +27,7 @@ function main() {
         shelljs_1.default.exec("yarn tsc --init --outDir dist");
         fs_1.default.writeFileSync(".eslintrc.js", eslintConfig_1.eslint);
         fs_1.default.writeFileSync(".eslintignore", eslintConfig_1.eslintignore);
-        fs_1.default.writeFileSync(".prettierrc.js", JSON.stringify(prettierConfig_1.prettier, null, 2));
+        fs_1.default.writeFileSync(".prettierrc.js", prettierConfig_1.prettier);
         shelljs_1.default.exec(`node -e "let pkg=require('./package.json'); pkg.prettier='@eunchurn/prettier-config'; require('fs').writeFileSync('package.json', JSON.stringify(pkg, null, 2));"`);
         try {
             shelljs_1.default.exec("mkdir .vscode");
