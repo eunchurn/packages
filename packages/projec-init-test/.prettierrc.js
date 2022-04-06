@@ -1,1 +1,4 @@
-"\nmodule.exports = {\n  ...require(\"@eunchurn/prettier-config\"),\n};\n"
+
+module.exports = {
+  ...require("@eunchurn/prettier-config"),
+};

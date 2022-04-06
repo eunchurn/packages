@@ -5,14 +5,22 @@ import fs from "fs";
 import { eslint, eslintignore } from "./eslintConfig";
 import { prettier } from "./prettierConfig";
 import { vscode } from "./vscodeConfig";
+import { paths } from "./paths";
+import { moduleAliases } from "./moduleAliases";
+import { src } from "./src";
+import { jestConfig } from "./jestConfig";
+import { jestSetupEnv } from "./jestSetupEnv";
+import { sampleTestCode } from "./sampleTestCode";
 
 async function main() {
   console.log("== 🎁 installing eunchurn TypeScript project");
   shelljs.exec(
-    "yarn add -D typescript ts-node ts-node-dev @types/node @eunchurn/eslint-config @eunchurn/prettier-config",
+    "yarn add -D typescript ts-node ts-node-dev @types/node @eunchurn/eslint-config @eunchurn/prettier-config jest ts-jest @types/jest @types/module-alias cross-env dotenv-cli",
   );
+  shelljs.exec("yarn add module-alias");
   shelljs.exec("npx gitignore node");
-  shelljs.exec("yarn tsc --init --outDir dist");
+  shelljs.exec("yarn tsc --init --outDir dist --baseUrl . --module commonjs --paths null");
+  shelljs.sed("-i", `"paths": undefined,`, paths, "tsconfig.json");
   fs.writeFileSync(".eslintrc.js", eslint);
   fs.writeFileSync(".eslintignore", eslintignore);
   fs.writeFileSync(".prettierrc.js", prettier);
@@ -30,7 +38,21 @@ async function main() {
   } catch {
     console.log("src already exist");
   }
-  fs.writeFileSync("src/index.ts", `export {};`);
+  fs.writeFileSync("src/index.ts", src);
+  fs.writeFileSync("src/moduleAliases.ts", moduleAliases);
+  fs.writeFileSync("jest.config.ts", jestConfig);
+  try {
+    shelljs.exec("mkdir src/__tests__");
+    fs.writeFileSync("src/__tests__/index.spec.ts", sampleTestCode);
+  } catch {
+    console.log("src/__tests__ already exist");
+  }
+  try {
+    shelljs.exec("mkdir .jest");
+    fs.writeFileSync(".jest/setupEnv.js", jestSetupEnv);
+  } catch {
+    console.log(".jest already exist");
+  }
   return "done";
 }
 

@@ -15,18 +15,25 @@
     "url": "git@github.com-eunchurn:eunchurn/ts-utils.git"
   },
   "scripts": {
-    "project-init": "ts-node src/index.ts",
+    "project-init": "node init.js",
     "watch": "tsc --watch"
   },
   "dependencies": {
     "@eunchurn/eslint-config": "^0.1.8",
     "@eunchurn/init": "^0.0.22",
-    "@eunchurn/prettier-config": "^0.0.2"
+    "@eunchurn/prettier-config": "^0.0.2",
+    "module-alias": "^2.2.2"
   },
   "devDependencies": {
     "@eunchurn/eslint-config": "^0.1.8",
     "@eunchurn/prettier-config": "^0.0.2",
+    "@types/jest": "^27.4.1",
+    "@types/module-alias": "^2.0.1",
     "@types/node": "^17.0.23",
+    "cross-env": "^7.0.3",
+    "dotenv-cli": "^5.1.0",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
     "ts-node": "^10.7.0",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.6.3"

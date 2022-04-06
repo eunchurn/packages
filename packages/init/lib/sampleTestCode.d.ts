@@ -1,0 +1,2 @@
+export declare const sampleTestCode = "\ndescribe(\"Test suite\", () => {\n  it(\"should run test\", () => {\n    expect(true).toBe(true);\n  });\n});\n\n";
+//# sourceMappingURL=sampleTestCode.d.ts.map
