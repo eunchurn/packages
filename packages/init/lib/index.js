@@ -13,7 +13,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-// import shelljs from "shelljs";
+const shelljs_1 = __importDefault(require("shelljs"));
 const child_process_1 = require("child_process");
 const fs_1 = __importDefault(require("fs"));
 const eslintConfig_1 = require("./eslintConfig");
@@ -31,7 +31,7 @@ function main() {
         fs_1.default.writeFileSync(".eslintignore", eslintConfig_1.eslintignore);
         fs_1.default.writeFileSync(".prettierrc", JSON.stringify(prettierConfig_1.prettier, null, 2));
         try {
-            (0, child_process_1.execSync)("mkdir .vscode");
+            shelljs_1.default.exec("mkdir .vscode");
         }
         catch (_a) {
             console.log(".vscode already exist");
@@ -40,5 +40,7 @@ function main() {
         return "done";
     });
 }
-main().then(() => { console.log("== 🎉 eunchurn project setting done"); });
+main().then(() => {
+    console.log("== 🎉 eunchurn project setting done");
+});
 //# sourceMappingURL=index.js.map

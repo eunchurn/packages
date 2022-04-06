@@ -36,7 +36,14 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "shelljs": "^0.8.5",
     "typescript": "^4.6.2"
   },
-  "gitHead": "a0dbe66d26463c27df3f10f6b3f51e83d49da293"
+  "peerDependencies": {
+    "shelljs": "^0.8.5"
+  },
+  "gitHead": "a0dbe66d26463c27df3f10f6b3f51e83d49da293",
+  "devDependencies": {
+    "@types/shelljs": "^0.8.11"
+  }
 }
