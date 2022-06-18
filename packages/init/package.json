@@ -23,9 +23,6 @@
   "bin": {
     "init": "lib/index.js"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
-  },
   "repository": {
     "type": "git",
     "url": "git@github.com:eunchurn/packages.git"
