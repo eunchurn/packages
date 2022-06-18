@@ -1,5 +1,6 @@
-[![Unit Test](https://github.com/eunchurn/ts-utils/actions/workflows/unit-test.yml/badge.svg)](https://github.com/eunchurn/ts-utils/actions/workflows/unit-test.yml)
-# @eunchurn ts-utils
+[![Unit Test](https://github.com/eunchurn/packages/actions/workflows/unit-test.yml/badge.svg)](https://github.com/eunchurn/packages/actions/workflows/unit-test.yml)
+
+# @eunchurn packages
 
 ## Ring buffer
 
@@ -12,7 +13,7 @@ const ring = new Ring(100);
 
 ring.push(1);
 
-console.log(ring.toArray())
+console.log(ring.toArray());
 // [1]
 
 const { isEmpty, count, isFull, size } = testRing;
@@ -22,13 +23,14 @@ console.log({ isEmpty, count, isFull, size });
 
 ring.dequeue();
 
-console.log(ring.toArray())
+console.log(ring.toArray());
 // []
 
 console.log({ isEmpty, count, isFull, size });
 
 // { isEmpty: true, count: 0, isFull: false, size: 100 }
 ```
+
 ## `@eunchurn/init`
 
 TypeScript Project initialize
@@ -102,4 +104,3 @@ module.exports = {
 ```
 npm config set access public
 ```
-

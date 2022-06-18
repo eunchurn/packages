@@ -8,11 +8,11 @@
     "types"
   ],
   "author": "Eunchurn Park <eunchurn.park@gmail.com>",
-  "homepage": "https://github.com/eunchurn/ts-utils/tree/main/packages/ringtest#readme",
+  "homepage": "https://github.com/eunchurn/packages/tree/main/packages/ringtest#readme",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com-eunchurn:eunchurn/ts-utils.git"
+    "url": "git@github.com-eunchurn:eunchurn/packages.git"
   },
   "scripts": {
     "project-init": "node init.js",

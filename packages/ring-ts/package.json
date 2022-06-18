@@ -9,7 +9,7 @@
     "typescript"
   ],
   "author": "Eunchurn Park <eunchurn.park@gmail.com>",
-  "homepage": "https://github.com/eunchurn/ts-utils/tree/main/packages/service#readme",
+  "homepage": "https://github.com/eunchurn/packages/tree/main/packages/service#readme",
   "license": "MIT",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -22,7 +22,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eunchurn/ts-utils.git"
+    "url": "git+https://github.com/eunchurn/packages.git"
   },
   "scripts": {
     "tsc": "tsc",
@@ -30,7 +30,7 @@
     "typecheck": "tsc --noEmit"
   },
   "bugs": {
-    "url": "https://github.com/eunchurn/ts-utils/issues"
+    "url": "https://github.com/eunchurn/packages/issues"
   },
   "gitHead": "7c0aa64dc996a69b6605666c5994bbf84f9196ef",
   "engines": {
