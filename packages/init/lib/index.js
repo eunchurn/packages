@@ -26,9 +26,11 @@ const jestConfig_1 = require("./jestConfig");
 const jestSetupEnv_1 = require("./jestSetupEnv");
 const sampleTestCode_1 = require("./sampleTestCode");
 const prettierignore_1 = require("./prettierignore");
+const ora_1 = __importDefault(require("ora"));
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
-        console.log("== 🎁 installing eunchurn TypeScript project");
+        const spinner = (0, ora_1.default)("🎁 installing TypeScript project...").start();
+        spinner.text = "🎁 installing TypeScript project...";
         shelljs_1.default.exec("yarn add -D typescript ts-node ts-node-dev @types/node @eunchurn/eslint-config @eunchurn/prettier-config jest ts-jest @types/jest @types/module-alias cross-env dotenv-cli");
         shelljs_1.default.exec("yarn add module-alias");
         shelljs_1.default.exec("npx gitignore node");
@@ -70,10 +72,10 @@ function main() {
             console.log(".jest already exist");
         }
         shelljs_1.default.exec("npx prettier --write .");
-        return "done";
+        return spinner;
     });
 }
-main().then(() => {
-    console.log("== 🎉 eunchurn project setting done");
+main().then((spinner) => {
+    spinner.succeed("🎉 TypeScript project setting done");
 });
 //# sourceMappingURL=index.js.map

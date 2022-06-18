@@ -1,4 +1,3 @@
-
 import { pathsToModuleNameMapper, GlobalConfigTsJest } from "ts-jest";
 import type { InitialOptionsTsJest } from "ts-jest/dist/types";
 import ts from "typescript";
@@ -41,11 +40,10 @@ const jestSetting: InitialOptionsTsJest = {
   modulePaths: ["<rootDir>"],
   moduleNameMapper,
   modulePathIgnorePatterns: ["dist"],
-  testRegex: "\.spec|\.test\.ts$",
+  testRegex: ".spec|.test.ts$",
   transform: {
-    "^.+\.ts$": "ts-jest",
+    "^.+.ts$": "ts-jest",
   },
 };
 
 export default jestSetting;
-

@@ -12,9 +12,11 @@ import { jestConfig } from "./jestConfig";
 import { jestSetupEnv } from "./jestSetupEnv";
 import { sampleTestCode } from "./sampleTestCode";
 import { prettierignore } from "./prettierignore";
+import ora from "ora";
 
 async function main() {
-  console.log("== 🎁 installing eunchurn TypeScript project");
+  const spinner = ora("🎁 installing TypeScript project...").start();
+  spinner.text = "🎁 installing TypeScript project...";
   shelljs.exec(
     "yarn add -D typescript ts-node ts-node-dev @types/node @eunchurn/eslint-config @eunchurn/prettier-config jest ts-jest @types/jest @types/module-alias cross-env dotenv-cli",
   );
@@ -56,9 +58,9 @@ async function main() {
     console.log(".jest already exist");
   }
   shelljs.exec("npx prettier --write .");
-  return "done";
+  return spinner;
 }
 
-main().then(() => {
-  console.log("== 🎉 eunchurn project setting done");
+main().then((spinner) => {
+  spinner.succeed("🎉 TypeScript project setting done");
 });
