@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "description": "",
   "workspaces": [
     "packages/*"
@@ -27,7 +27,8 @@
     "lerna:publish:npm": "lerna publish from-package --yes --registry https://registry.npmjs.org --no-verify-registry --no-verify-access",
     "lerna:release": "lerna publish from-package",
     "lerna:publish": "yarn lerna:publish:npm && yarn lerna:publish:github",
-    "release": "standard-version"
+    "release": "standard-version",
+    "version": "lerna version"
   },
   "repository": {
     "type": "git",
