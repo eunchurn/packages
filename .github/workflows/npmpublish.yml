@@ -61,6 +61,7 @@ jobs:
       - name: Install dependencies
         run: |
           yarn install --immutable --immutable-cache --check-cache
+          cp lerna.default.json lerna.json
           yarn bootstrap --no-progress --concurrency 2
       - name: "Publish to Node Package Manager"
         run: |
@@ -100,6 +101,7 @@ jobs:
       - name: Install dependencies
         run: |
           yarn install --immutable --immutable-cache --check-cache
+          cp lerna.default.json lerna.json
           yarn bootstrap --no-progress --concurrency 2
       - name: "Publish to Github Package Registry"
         run: |
