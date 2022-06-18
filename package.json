@@ -36,6 +36,8 @@
     "versionup:major": "lerna version major --conventional-commits --no-git-tag-version",
     "postversionup:major": "npm run commit-version",
     "commit-version": "git add . && git commit -m \"chore(release): publish `node -p 'require(\"./lerna.json\").version'`\"",
+    "prerelease:alpha": "lerna version --no-git-tag-version --conventional-prerelease --yes && git add -u .",
+    "release:alpha": "lerna publish from-package --pre-dist-tag next",
     "release": "standard-version",
     "version": "lerna version"
   },
