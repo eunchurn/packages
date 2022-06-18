@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "version": "0.0.1",
+  "version": "0.4.0",
   "description": "",
   "workspaces": [
     "packages/*"
@@ -26,7 +26,8 @@
     "lerna:publish:github": "cp lerna.gpr.json lerna.json && lerna publish from-package --registry https://npm.pkg.github.com --no-commit-hooks",
     "lerna:publish:npm": "cp lerna.npm.json lerna.json && lerna publish --registry https://registry.npmjs.org --no-commit-hooks",
     "lerna:release": "lerna publish from-package",
-    "lerna:publish": "yarn lerna:publish:npm && yarn lerna:publish:github"
+    "lerna:publish": "yarn lerna:publish:npm && yarn lerna:publish:github",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -49,6 +50,7 @@
     "jest": "28.1.1",
     "lerna": "4.0.0",
     "prettier": "2.7.1",
+    "standard-version": "9.5.0",
     "ts-jest": "28.0.5",
     "ts-node": "10.8.1",
     "typedoc": "0.22.17",
