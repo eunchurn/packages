@@ -1,4 +1,8 @@
-# Eunchurn ESLint configuration
+# [`@eunchurn/eslint-config`](https://github.com/eunchurn/packages/packages/1490277)
+
+![npm](https://img.shields.io/npm/dw/@eunchurn%2Feslint-config) [![npm version](https://badge.fury.io/js/@eunchurn%2Feslint-config.svg)](https://badge.fury.io/js/@eunchurn%2Feslint-config) [![GitHub version](https://badge.fury.io/gh/eunchurn%2Fpackages.svg)](https://badge.fury.io/gh/eunchurn%2Fpackages) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Eunchurn ESLint configuration
 
 Code lint with TypeScript and Prettier
 
@@ -21,7 +25,7 @@ add `.eslintrc.json`
 }
 ```
 
-## Configuration
+## ESLint Configuration
 
 This configuration follow
 
