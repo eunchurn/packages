@@ -589,6 +589,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@eunchurn/prettier-config@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@eunchurn/prettier-config/-/prettier-config-0.0.2.tgz#59b5e004c6518a0afd38d484096f5c04cd05fc2d"
+  integrity sha512-QdIpSF+QppsrwrVcSRtlgtvyJWflHqmEKOIhr52gBhyiX64Xn54p5t3HWPqz/JOVcdJcwzmi5mzK9HD/HEA3Cg==
+
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.2"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.9.2.tgz#68be55c737023009dfc5fe245d51181bb6476914"
