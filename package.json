@@ -23,8 +23,8 @@
     "tsdoc:test": "typedoc --out docs packages/ring-ts/src/index.ts",
     "lerna:create": "lerna create",
     "lerna:add": "lerna add --no-bootstrap",
-    "lerna:publish:github": "lerna publish from-package --yes --registry https://npm.pkg.github.com",
-    "lerna:publish:npm": "lerna publish from-package --yes --registry https://registry.npmjs.org",
+    "lerna:publish:github": "lerna publish from-package --yes --registry https://npm.pkg.github.com --no-verify-registry --no-verify-access",
+    "lerna:publish:npm": "lerna publish from-package --yes --registry https://registry.npmjs.org --no-verify-registry --no-verify-access",
     "lerna:release": "lerna publish from-package",
     "lerna:publish": "yarn lerna:publish:npm && yarn lerna:publish:github",
     "release": "standard-version"
