@@ -1,6 +1,6 @@
 {
   "name": "@eunchurn/eslint-config",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Code lint with TypeScript and Prettier",
   "keywords": [
     "eslint",
@@ -40,5 +40,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.6.0"
   },
-  "gitHead": "f96d39b2cd14a0af230f1df96258de2442f73064"
+  "gitHead": "f96d39b2cd14a0af230f1df96258de2442f73064",
+  "engines": {
+    "node": "^14 || >=16.0.0"
+  }
 }

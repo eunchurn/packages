@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://github.com/eunchurn/packages/compare/ringtest@1.0.3...ringtest@1.0.4) (2022-06-18)
+
+
+### Bug Fixes
+
+* **change:** repo name ([b0bc807](https://github.com/eunchurn/packages/commit/b0bc807ce5351bdf24893ec6127f1d21879167cb))
+
+
+
+
+
 ## [1.0.3](https://github.com/eunchurn/packages/compare/ringtest@1.0.2...ringtest@1.0.3) (2022-03-18)
 
 **Note:** Version bump only for package ringtest
