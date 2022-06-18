@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com-eunchurn:eunchurn/packages.git"
+    "url": "git@github.com:eunchurn/packages.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"

@@ -7,4 +7,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-- **base-eslint-config:** added ([0f67e96](https://github.com-eunchurn/eunchurn/packages/commit/0f67e9685a6b71ac80579d1bc9b2edc424b9cbdb))
+- **base-eslint-config:** added ([0f67e96](https://github.com/eunchurn/packages/commit/0f67e9685a6b71ac80579d1bc9b2edc424b9cbdb))

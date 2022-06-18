@@ -12,7 +12,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com-eunchurn:eunchurn/packages.git"
+    "url": "git@github.com:eunchurn/packages.git"
   },
   "scripts": {
     "start": "ts-node src/index.ts",
