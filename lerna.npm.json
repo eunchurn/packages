@@ -10,9 +10,6 @@
   "version": "independent",
   "command": {
     "version": {
-      "ignoreChanges": [
-        "*.md"
-      ],
       "npmClient": "yarn",
       "message": "chore(release): publish"
     },
