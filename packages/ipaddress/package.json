@@ -1,6 +1,6 @@
 {
   "name": "@eunchurn/ipaddress",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Get external IP address of network interface on internet connection",
   "keywords": [
     "ipaddress",
