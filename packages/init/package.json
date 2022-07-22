@@ -33,7 +33,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "ora": "^5.4.1",
+    "ora": "^6.0.0",
     "shelljs": "^0.8.5",
     "typescript": "^4.6.2"
   },
