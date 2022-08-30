@@ -66,7 +66,7 @@
     "ts-jest": "28.0.8",
     "ts-node": "10.9.1",
     "typedoc": "0.23.11",
-    "typedoc-plugin-markdown": "3.13.4",
+    "typedoc-plugin-markdown": "3.13.5",
     "typescript": "4.8.2"
   },
   "engines": {
