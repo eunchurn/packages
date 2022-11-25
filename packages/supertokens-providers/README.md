@@ -1,5 +1,7 @@
 # `@eunchurn/supertokens-providers`
 
+![npm](https://img.shields.io/npm/dw/@eunchurn/supertokens-providers) [![npm version](https://badge.fury.io/js/@eunchurn/supertokens-providers.svg)](https://badge.fury.io/js/@eunchurn/supertokens-providers) [![GitHub version](https://badge.fury.io/gh/eunchurn%2Fpackages.svg)](https://badge.fury.io/gh/eunchurn%2Fpackages) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Naver and Kakao providers for SuperTokens
 
 [SuperTokens](https://supertokens.com)애서 간편 로그인의 Naver와 Kakao의 Custom provider를 제공합니다.
