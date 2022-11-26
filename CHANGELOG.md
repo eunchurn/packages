@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.3](https://github.com/eunchurn/packages/compare/v0.5.2...v0.5.3) (2022-11-26)
+
+
+### Bug Fixes
+
+* **deps:** yarn.lock ([d5bd426](https://github.com/eunchurn/packages/commit/d5bd426f42481b6ffd9b9771dea05a228307caa2))
+
 ### [0.5.2](https://github.com/eunchurn/packages/compare/v0.5.1...v0.5.2) (2022-11-26)
 
 ### [0.4.20](https://github.com/eunchurn/packages/compare/v0.4.19...v0.4.20) (2022-06-19)
