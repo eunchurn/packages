@@ -1,4 +1,6 @@
-module.exports = {
+import { Linter } from "eslint";
+
+const config: Linter.BaseConfig = {
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint"],
   extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
@@ -22,3 +24,5 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": ["warn"],
   },
 };
+
+module.exports = config;

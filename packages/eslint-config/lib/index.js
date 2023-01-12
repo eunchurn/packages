@@ -1,5 +1,6 @@
 "use strict";
-module.exports = {
+Object.defineProperty(exports, "__esModule", { value: true });
+const config = {
     parser: "@typescript-eslint/parser",
     plugins: ["@typescript-eslint"],
     extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
@@ -23,4 +24,5 @@ module.exports = {
         "@typescript-eslint/no-explicit-any": ["warn"],
     },
 };
+module.exports = config;
 //# sourceMappingURL=index.js.map
