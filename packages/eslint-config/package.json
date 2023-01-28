@@ -1,6 +1,6 @@
 {
   "name": "@eunchurn/eslint-config",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Code lint with TypeScript and Prettier",
   "keywords": [
     "eslint",
