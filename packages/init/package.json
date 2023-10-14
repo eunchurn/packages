@@ -42,7 +42,7 @@
   },
   "gitHead": "a0dbe66d26463c27df3f10f6b3f51e83d49da293",
   "devDependencies": {
-    "@types/shelljs": "0.8.12"
+    "@types/shelljs": "0.8.13"
   },
   "engines": {
     "node": "^14 || >=16.0.0"
