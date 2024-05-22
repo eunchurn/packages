@@ -27,7 +27,7 @@
   "devDependencies": {
     "@eunchurn/eslint-config": "^0.1.9",
     "@eunchurn/prettier-config": "^0.0.3",
-    "@types/jest": "29.5.11",
+    "@types/jest": "29.5.12",
     "@types/module-alias": "2.0.4",
     "@types/node": "18.19.11",
     "cross-env": "7.0.3",
